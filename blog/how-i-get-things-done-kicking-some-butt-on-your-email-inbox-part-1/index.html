@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='I get a lot of mail and wanted to share how I manage the large volumes of email, tasks and information that I get while working at Microsoft. I use a variety of tools to help me incorporate David Allen’s getting things done methodolgy (GTD) and they work really well for me. As more and more folks come to me and ask me about information management it was time to create something permanent “that scales” as we say at Microsoft so I can share the knowledge.'><title>How I get things done / Kicking some butt on your email inbox – Part 1</title>
+
+<link rel='canonical' href='https://jeffsandquist.com/blog/how-i-get-things-done-kicking-some-butt-on-your-email-inbox-part-1/'>
+
+<link rel="stylesheet" href="https://jeffsandquist.com/scss/style.min.css"><meta property='og:title' content='How I get things done / Kicking some butt on your email inbox – Part 1'>
+<meta property='og:description' content='I get a lot of mail and wanted to share how I manage the large volumes of email, tasks and information that I get while working at Microsoft. I use a variety of tools to help me incorporate David Allen’s getting things done methodolgy (GTD) and they work really well for me. As more and more folks come to me and ask me about information management it was time to create something permanent “that scales” as we say at Microsoft so I can share the knowledge.'>
+<meta property='og:url' content='https://jeffsandquist.com/blog/how-i-get-things-done-kicking-some-butt-on-your-email-inbox-part-1/'>
+<meta property='og:site_name' content='Jeff Sandquist'>
+<meta property='og:type' content='article'><meta property='article:section' content='Blog' /><meta property='article:published_time' content='2004-10-10T01:52:36&#43;00:00'/><meta property='article:modified_time' content='2004-10-10T01:52:36&#43;00:00'/>
+<meta name="twitter:title" content="How I get things done / Kicking some butt on your email inbox – Part 1">
+<meta name="twitter:description" content="I get a lot of mail and wanted to share how I manage the large volumes of email, tasks and information that I get while working at Microsoft. I use a variety of tools to help me incorporate David Allen’s getting things done methodolgy (GTD) and they work really well for me. As more and more folks come to me and ask me about information management it was time to create something permanent “that scales” as we say at Microsoft so I can share the knowledge.">
+<meta name="robots" content="noindex" /> 
+
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="https://jeffsandquist.com/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://jeffsandquist.com/">Jeff Sandquist</a></h1>
+        <h2 class="site-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='https://jeffsandquist.com/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://jeffsandquist.com/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://jeffsandquist.com/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://jeffsandquist.com/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://jeffsandquist.com/" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <h2 class="article-title">
+        <a href="https://jeffsandquist.com/blog/how-i-get-things-done-kicking-some-butt-on-your-email-inbox-part-1/">How I get things done / Kicking some butt on your email inbox – Part 1</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Oct 10, 2004</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <p><img alt="Information Overload" hspace="0" src="http://www.jeffsandquist.com/images/posts/informationoverload.jpg" align="right" border="0" />I get a lot of mail and wanted to share how I manage the large volumes of email, tasks and information that I get while working at Microsoft. I use a variety of tools to help me incorporate <a class="link" href="http://www.davidco.com/"  target="_blank" rel="noopener"
+    >David Allen’s getting things done methodolgy</a> (GTD) and they work really well for me. As more and more folks come to me and ask me about information management it was time to create something permanent “that scales” as we say at Microsoft so I can share the knowledge.</p>
+<p>I will divide this into two posts:</p>
+<ol>
+<li>Getting started with Getting things done and the Outlook add-in</li>
+<li>The <em>right</em> use of Outlook rules and folder management for reference</li>
+</ol>
+<p>When I talk to folk about Getting things done they often say things like, “Oh I have a system already” or “I am able to juggle lots of things in my brain and toggle between them quickly, I don’t need a system like GTD.”</p>
+<p>To be honest I was in this camp too but came to the point where I was losing creative energy. <a class="link" href="http://www.lennpryor.com/"  target="_blank" rel="noopener"
+    >Lenn</a> put me on to Getting Things Done about two years ago and it has been life changing. </p>
+<p>With Getting things done, I am laser focussed, I am creative and I’ve gained valuable time back into my life. <a class="link" href="http://www.davidco.com/"  target="_blank" rel="noopener"
+    >David</a> makes the following point, “How can you be creative and free when you braining is reverberating with phrases like Gotta go to the bank… Gotta follow up with the architect… Need to send email to my boss… Need to write that report.. “.</p>
+<p>You can’t…</p>
+<p>You need to get this data out of your pshycic ram and into a knowledge capture device. (e.g. a tape recorder, a PDA, a notepad or computer). Then use tactics like daily and weekly reviews to create a strategy for attacking the items. Me, I do a daily review every morning around 7:00 am while having a morning coffee. I also do a 1 hour weekly review Friday afternoons to set broader strategies in place for long term issues and bigger projects.</p>
+<p>**Step 1 – Getting Started<br>
+** First off you need to read <a class="link" href="http://davidco.com/productDetail.php?id=30&amp;IDoption=22"  target="_blank" rel="noopener"
+    >David’s short book</a> or listen to his <a class="link" href="http://www.audible.com/adbl/store/product.jsp?BV_SessionID=@@@@1241610846.1096578410@@@@&amp;BV_EngineID=ccckadcmjddihljcefecegedfhfdhfn.0&amp;uniqueKey=1096578427491&amp;pageType=preliminaryResults&amp;productID=BK_SANS_000347"  target="_blank" rel="noopener"
+    >audio book</a> then come back to this post. 🙂</p>
+<p>Personally, I tried reading the book, but was more succesful with the audio book instead. The book is split in two parts, the first part is David giving an overview of how to manage information and the second part is about implementing the program. I listened to part one on my commute to work and then in part two I listened to, in my office while putting the program to action.</p>
+<p>It was just like having David in my office helping me to get the program in place. I rewinded and paused the recording as I worked through the process of file folders, organizing your email, etc. David charges big dollars to executives around the world to provide personal coaching. Don’t tell David about my secret 🙂 </p>
+<p>Just start doing some of the things he he says and you’ll regain valuable time and focus back into your world, do them all and you’ll change your life.</p>
+<p>**Step 2 – Working with Outlook<br>
+** Once you get David’s base system in place you’ll find that you’re wrestling with Outlook, you need to use the add-in. For me personally, I don’t think I really got traction with the system until I started using the <a class="link" href="http://davidco.com/productDetail.php?id=63&amp;IDoption=20"  target="_blank" rel="noopener"
+    >Getting Things Done Outlook Add-in</a>.  Using the add-in saves you time and forces you into a new habit of managing your mail, tasks and projects. Don’t think of it like training wheels, in fact think of it like super-charging Outlook for productivity.</p>
+<p>In Getting Things Done, you look at email as it comes in and ask yourself the following questions:</p>
+<ul>
+<li>Does this mail matter, can I delete it? <em>No? — Delete it!</em></li>
+<li>Can I resolved this mail in less than two minutes? <em>Yes? Do it!</em></li>
+<li>Should someone else be doing this mail? — <em>Delegate it</em></li>
+<li>Will this take me longer than two minutes? — <em>Defer it!</em></li>
+<li>Is this reference material? — <em>File it and assign it to a project or category</em></li>
+</ul>
+<p>The Getting Things Done Outloook add-in, adds a set of buttons to outlook for managing your information. While reviewing your Inbox you’ll select these depending on what you need to do. </p>
+<p><img alt="Getting Things Done Outlook Add-in Buttons" hspace="0" src="http://www.jeffsandquist.com/images/posts/GTD_2DActionBar.jpg" align="baseline" border="0" /></p>
+<p><em>Delegate</em><br>
+Selecting this generates a dialog asking which project you would like to assign the task to (if you don’t have one on file, you can create a new project) and who to delegate this to. It then pops up Outlook’s standard email form so you can send them a note. Last but not least it, automatically places a “waiting for” task on your task list so that you’ve got something to track that you are waiting for a response.</p>
+<p><em>Defer</em><br>
+Ever get something on your email that you want to defer to a particular date/time to work on? Defer automatically blocks out time on your calendar to work on the task</p>
+<p><em>Action</em><br>
+This is the button I use the most of all. It allows me to take an email and assign it to a task. It preserves the original mail, moving the mail out of my inbox and placing it on my task list organized by action type. (phone calls, computer work with internet connection, computer work without internet, agenda items, etc).</p>
+<p class="MsoNormal">
+  <font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><em>Someday<br /></em>This pops up a dialog for items that you want to file under Somday/Maybe and create a task. These are those high level 50,000 feet items like the email you&#8217;ve got about an opportunity to climb mount everest, etc.</span></font>
+</p>
+<p class="MsoNormal">
+  <font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><em>Snooze<br /></em>This is one my favorite options. Ever hold things in your inbox because you know you want to do them soon, but they can wait a week or so?&nbsp;Click the snooze button&#8230; Doing this moves the item out of your inbox for the specified time period and it will magically reappear in your inbox in the time you specified.</span></font>
+</p>
+<p class="MsoNormal">
+  <font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><em>File<br /></em>I&#8217;ll talk more about this in a later post. The file button is awesome. As mail comes in and I need to file it, I just select this button and it automatically puts it in my reference folder and tags it with the project name.</span></font>
+</p>
+<p class="MsoNormal">
+  <font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"></span></font><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Would you believe I use one folder for all my reference materials? </span></font>
+</p>
+<p class="MsoNormal">
+  <font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Until I did it this way, I had a mess of project folder heirarchy in Outlook. I spent more time trying to remember what my personal taxonomy was. Now I have one folder and with Outlook custom folder views, I can always find the information I use organized by project type. To succeed you need a fast search for Outlook like <a href="http://www.lookoutsoft.com/">Lookout&#8217;s search </a>, but this was a time saving thing for me..</span></font>
+</p>
+<p class="MsoNormal">
+  <font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">So this is the first step on k<br /> ic<br /> king some butt on your ema<br /> il inbox. In part 2 I&#8217;ll go over strategies for rules and managing your reference material.</span></font>
+</p>
+<p class="MsoNormal">
+  <font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Let me know if this helps and if you are using different tactics for Getting Things Done and information management.</span></font>
+</p>
+<p class="MsoNormal">
+  <font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Cheers!</span></font>
+</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+
+    
+        
+    <div class="disqus-container">
+    
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Jeff Sandquist
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="https://jeffsandquist.com/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

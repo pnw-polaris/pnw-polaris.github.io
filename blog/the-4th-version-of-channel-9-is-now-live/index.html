@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Today we completed the deployment of Channel 9 Version 4.0. We’re still doing some final stabilization work that includes tweaking performance, but we’re on our way. This is a 100 per cent rewrite of the predecessor and has been a long time in the making.
+A little over five years ago Channel 9 came on the air, some would say ushering in a wave of transparency for Microsoft and becoming a poster child for corporate blogging.'><title>The 4th Version of Channel 9 Is Now Live</title>
+
+<link rel='canonical' href='https://jeffsandquist.com/blog/the-4th-version-of-channel-9-is-now-live/'>
+
+<link rel="stylesheet" href="https://jeffsandquist.com/scss/style.min.css"><meta property='og:title' content='The 4th Version of Channel 9 Is Now Live'>
+<meta property='og:description' content='Today we completed the deployment of Channel 9 Version 4.0. We’re still doing some final stabilization work that includes tweaking performance, but we’re on our way. This is a 100 per cent rewrite of the predecessor and has been a long time in the making.
+A little over five years ago Channel 9 came on the air, some would say ushering in a wave of transparency for Microsoft and becoming a poster child for corporate blogging.'>
+<meta property='og:url' content='https://jeffsandquist.com/blog/the-4th-version-of-channel-9-is-now-live/'>
+<meta property='og:site_name' content='Jeff Sandquist'>
+<meta property='og:type' content='article'><meta property='article:section' content='Blog' /><meta property='article:published_time' content='2008-06-03T22:24:00&#43;00:00'/><meta property='article:modified_time' content='2008-06-03T22:24:00&#43;00:00'/>
+<meta name="twitter:title" content="The 4th Version of Channel 9 Is Now Live">
+<meta name="twitter:description" content="Today we completed the deployment of Channel 9 Version 4.0. We’re still doing some final stabilization work that includes tweaking performance, but we’re on our way. This is a 100 per cent rewrite of the predecessor and has been a long time in the making.
+A little over five years ago Channel 9 came on the air, some would say ushering in a wave of transparency for Microsoft and becoming a poster child for corporate blogging.">
+<meta name="robots" content="noindex" /> 
+
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="https://jeffsandquist.com/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://jeffsandquist.com/">Jeff Sandquist</a></h1>
+        <h2 class="site-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='https://jeffsandquist.com/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://jeffsandquist.com/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://jeffsandquist.com/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://jeffsandquist.com/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://jeffsandquist.com/" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <h2 class="article-title">
+        <a href="https://jeffsandquist.com/blog/the-4th-version-of-channel-9-is-now-live/">The 4th Version of Channel 9 Is Now Live</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Jun 03, 2008</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <p><img src="http://farm4.static.flickr.com/3274/2548170195_bac61c23df.jpg" alt="" class="left" />Today we completed the deployment of <a class="link" href="http://channel9.msdn.com"  target="_blank" rel="noopener"
+    >Channel 9 Version 4.0.</a> We’re still doing some final stabilization work that includes tweaking performance, but we’re on our way. This is a 100 per cent rewrite of the predecessor and has been a long time in the making.</p>
+<p>A little over five years ago <a class="link" href="http://channe9.msdn.com"  target="_blank" rel="noopener"
+    >Channel 9</a> came on the air, some would say ushering in a wave of transparency for Microsoft and becoming a poster child for corporate blogging. It has been a wild ride the last 5 years and I count my lucky stars for being able to be a part of all this and to still be here. It was a dream to work with Lenn Pryor, Robert Scoble, David Shadle and Bryn Waibel and everyone contributed in their own special way to create a Developer Community that “we’d want to be a member of”.</p>
+<p>On the platform side, the site was pretty basic and I think that was part of the charm.  We had forked a project that <a class="link" href="http://weblogs.asp.net/rhoward/"  target="_blank" rel="noopener"
+    >Rob Howard</a> was working on over on the ASP.NET Team called ASP.NET Forums 2.0 and had ran with it. I still remember Rob calling me the morning we went live saying something like, “You went #$%# live with that? Awesome. Can we have your bug fixes, there were a lot of bugs you know in that build”. I think we sitll owe you that check-in Rob.</p>
+<p><a class="link" href="http://channel9.msdn.com"  target="_blank" rel="noopener"
+    >Channel 9</a> rapidly grew over the years in traffic and features. I suppose many folks probably don’t know that there have been four major revisions to Channel 9, in last 5 years. </p>
+<table width="400" cellspacing="0" cellpadding="2" border="0">
+  <tr>
+    <td width="100" valign="top">
+      <a href="http://flickr.com/photos/jeffsand/2548995736/in/set-72157605412641884/"><img width="75" height="75" src="http://farm4.static.flickr.com/3105/2548995736_2dbaac720c_s.jpg" alt="Channel 9 - Version 1" /></a>
+    </td>
+<pre><code>&lt;td width=&quot;100&quot; valign=&quot;top&quot;&gt;
+  &lt;a href=&quot;http://flickr.com/photos/jeffsand/2548995464/in/set-72157605412641884/&quot;&gt;&lt;img width=&quot;75&quot; height=&quot;75&quot; src=&quot;http://farm4.static.flickr.com/3272/2548995464_a734e30fdf_s.jpg&quot; alt=&quot;Channel 9 - Version 2&quot; /&gt;&lt;/a&gt;
+&lt;/td&gt;
+
+&lt;td width=&quot;100&quot; valign=&quot;top&quot;&gt;
+  &lt;a href=&quot;http://flickr.com/photos/jeffsand/2548169507/in/set-72157605412641884/&quot;&gt;&lt;img width=&quot;75&quot; height=&quot;75&quot; src=&quot;http://farm4.static.flickr.com/3081/2548169507_495cf29364_s.jpg&quot; alt=&quot;Channel 9 - Version 3&quot; /&gt;&lt;/a&gt;
+&lt;/td&gt;
+
+&lt;td width=&quot;100&quot; valign=&quot;top&quot;&gt;
+  &lt;a href=&quot;http://flickr.com/photos/jeffsand/2548170195/in/set-72157605412641884/&quot;&gt;&lt;img width=&quot;75&quot; height=&quot;75&quot; src=&quot;http://farm4.static.flickr.com/3274/2548170195_bac61c23df_s.jpg&quot; alt=&quot;Channel 9 - Version 4 (Current)&quot; /&gt;&lt;/a&gt;
+&lt;/td&gt;
+</code></pre>
+  </tr>
+</table>
+<p>There were actually five version of Channel 9.  We had initially set out to align ourselves and document Longhorn and initially intended it to be ProjectLonghorn.com.  Some helpful “feedback” from Sanjay Parthasarathy had us change our ways and we took the project code name of Channel 9 as our brand. </p>
+<p><a class="link" href="http://flickr.com/photos/jeffsand/2548169267/in/set-72157605412641884/"  target="_blank" rel="noopener"
+    >Take a look at the comp</a> of the original site that didn’t ship, good design, but I don’t think it would have been successful. Too corporate and not a place I’d want to hang around.</p>
+<p>About 18 months ago, we made a big bet and that was to create a network of communities like Channel 9.  Since then our very small team has launched <a class="link" href="http://on10.net"  target="_blank" rel="noopener"
+    >Channel 10</a> for Power Users, <a class="link" href="http://channel8.msdn.com/"  target="_blank" rel="noopener"
+    >8 for students</a>, <a class="link" href="http://www.visitmix.com"  target="_blank" rel="noopener"
+    >Mix Online for the web</a> and <a class="link" href="http://edge.technet.com/"  target="_blank" rel="noopener"
+    >TechNet Edge</a> for the IT Pro. Rapidly iterating on design and experience as we made our way. Channel 10 actually had <a class="link" href="http://flickr.com/photos/jeffsand/sets/72157605412954126/"  target="_blank" rel="noopener"
+    >5 different homepage refreshes</a> in the last two years as we worked to figure out the right flow for a corporate blogging platform. After much debate we standardized on a “river of news”. We affectionately call these sites The Evangelism Network.</p>
+<p>As we launched the sites we standardized on a common code-base for all the communities. We wanted something that is localized, enables contributions from around the world, is a solid foundation as more and more Evangelism is happening “online” and allows to be a test bed of the latest Microsoft Developer Technologies.</p>
+<p>It is worth mentioning that the team today, is still a dream to work with. Very lean, mean, hard working and folks I am proud to work with. Our content team has their name in lights everyday, publishing kick-ass media. Today though on this development milestone, I wanted to call out the folks that work tirelessly behind the scenes, day and night ensuring a world class stage for our Evangelists.</p>
+<p><a class="link" href="http://dshadle.com"  target="_blank" rel="noopener"
+    >David</a>, <a class="link" href="http://weblogs.asp.net/eporter/"  target="_blank" rel="noopener"
+    >Erik</a>, <a class="link" href="http://www.duncanmackenzie.net/"  target="_blank" rel="noopener"
+    >Duncan</a>, <a class="link" href="http://blogs.msdn.com/graceworld/"  target="_blank" rel="noopener"
+    >Grace</a>, Nathan and Sampy thank you for the drive to take Channel 9 live on 4 and along the way for launching Channels 8, 10, Mix Online and TechNet Edge.  Wow, what a team!</p>
+<p>This will be the last long lead release from our team for some time ahead, now we’ll move to much shorter sprints and rapidly evolving and improving the code. I actually don’t think a day goes by now that we’re not shipping new code to the sites, which is awesome and creates a really fun atmosphere to work in.</p>
+<p>It goes without saying that none of this would be possible without customers. Millions of people ever month visit our network and participate, that involvement allows us to learn, share and grow together.</p>
+<p>Thank you.</p>
+<p>Now on to version 6. Just kidding. :-&gt;</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+
+    
+        
+    <div class="disqus-container">
+    
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Jeff Sandquist
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="https://jeffsandquist.com/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

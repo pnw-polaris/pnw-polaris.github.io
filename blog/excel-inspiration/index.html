@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Digging through my referrer log after reading Julie Leung’s unexpected gifts amongst garbage post, I found an unexpected post from Dennis E. Hamilton talking about his recent weight loss and how he employed a meal tracking spreadsheet like the one I use.But then Jeff Sandquist inspired me by his description of his 20-20 program. I followed his blog posts from the beginning, but it was when he first showed his spreadsheet that it dawned on me.'><title>Excel Inspiration?</title>
+
+<link rel='canonical' href='https://jeffsandquist.com/blog/excel-inspiration/'>
+
+<link rel="stylesheet" href="https://jeffsandquist.com/scss/style.min.css"><meta property='og:title' content='Excel Inspiration?'>
+<meta property='og:description' content='Digging through my referrer log after reading Julie Leung’s unexpected gifts amongst garbage post, I found an unexpected post from Dennis E. Hamilton talking about his recent weight loss and how he employed a meal tracking spreadsheet like the one I use.But then Jeff Sandquist inspired me by his description of his 20-20 program. I followed his blog posts from the beginning, but it was when he first showed his spreadsheet that it dawned on me.'>
+<meta property='og:url' content='https://jeffsandquist.com/blog/excel-inspiration/'>
+<meta property='og:site_name' content='Jeff Sandquist'>
+<meta property='og:type' content='article'><meta property='article:section' content='Blog' /><meta property='article:published_time' content='2004-12-27T21:24:00&#43;00:00'/><meta property='article:modified_time' content='2004-12-27T21:24:00&#43;00:00'/>
+<meta name="twitter:title" content="Excel Inspiration?">
+<meta name="twitter:description" content="Digging through my referrer log after reading Julie Leung’s unexpected gifts amongst garbage post, I found an unexpected post from Dennis E. Hamilton talking about his recent weight loss and how he employed a meal tracking spreadsheet like the one I use.But then Jeff Sandquist inspired me by his description of his 20-20 program. I followed his blog posts from the beginning, but it was when he first showed his spreadsheet that it dawned on me.">
+<meta name="robots" content="noindex" /> 
+
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="https://jeffsandquist.com/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://jeffsandquist.com/">Jeff Sandquist</a></h1>
+        <h2 class="site-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='https://jeffsandquist.com/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://jeffsandquist.com/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://jeffsandquist.com/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://jeffsandquist.com/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://jeffsandquist.com/" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <h2 class="article-title">
+        <a href="https://jeffsandquist.com/blog/excel-inspiration/">Excel Inspiration?</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Dec 27, 2004</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <p>Digging through my referrer log after reading Julie Leung’s <a class="link" href="http://www.julieleung.com/archives/001571.html"  target="_blank" rel="noopener"
+    >unexpected gifts amongst garbage post</a>, I found an unexpected post from Dennis E. Hamilton <a class="link" href="http://hugster.43things.com/entries/view/1580"  target="_blank" rel="noopener"
+    >talking about his recent weight loss</a> and how he employed a meal tracking spreadsheet like <a class="link" href="http://www.jeffsandquist.com/PermaLink,guid,4a309249-2f67-4818-b055-24cd09ce1d78.aspx"  target="_blank" rel="noopener"
+    >the one I use</a>.<blockquote dir=ltr style="MARGIN-RIGHT: 0px"></p>
+<p>But then Jeff Sandquist inspired me by <a class="link" href="http://www.jeffsandquist.com/PermaLink,guid,9b0ebae7-0ee8-4749-87de-409e7c867ea5.aspx"  target="_blank" rel="noopener"
+    >his description</a> of his 20-20 program.  I followed his blog posts from the beginning, but it was when he <a class="link" href="http://www.jeffsandquist.com/PermaLink,guid,4a309249-2f67-4818-b055-24cd09ce1d78.aspx"  target="_blank" rel="noopener"
+    >first showed his spreadsheet</a> that it dawned on me.  I know how to keep track and use spread sheets to monitor diet programs.  I haven’t been doing that and I have never counted calories.</blockquote> <p dir=ltr>I am thrilled it is working for you Dennis, it sure has for me as I am now down to 158 pounds. That is just 3 pounds from my goal of 155. They talk about the importance of meal tracking continuously in 20/20 and say that folks that keep the weight off, continue with meal tracking. I am definitely a believer, it helps you understand the choices you make. </p></p>
+<p>I try and keep my daily calorie range somewhere from 1500 to 1650 calories and my total fat at 33–55 grams. I’ve found that when my caloric intake is high I lose more weight. My dietician tells me that its because my metabolism slows down when I am low on calories. So much for thinking eating less will cause you to lose weight 🙂 Before the program 1500–1600 calories might have been the total for one trip to a fast food restaurant, but it seems like a lot to me now. I don’t fixate on the daily total for calories, sure I try and keep them in range, but what I do is total up the average for the past week and look at how I did on average. <p dir=ltr><img height=106 alt=Babyjogger src="http://www.jeffsandquist.com/images/posts/babyjogger_small.jpg" width=160 align=right border=0>My current work out schedule includes approximately five 3 mile runs per week over some pretty nasty inclines that we have up here on the Sammamish Plateau. Lauri and I got a great deal on a baby jogger from the want ads at work and now</p>
+<p><a class="link" href="http://www.jeffsandquist.com/PermaLink,guid,f93e9a1f-fda0-4e77-961c-6db809eb0693.aspx"  target="_blank" rel="noopener"
+    >Josie</a> can come along for the ride too. She call’s it the “Josie Jogger” as she’s no longer a baby, she’s five! Aside from the cardio I also do 3 weight lifting sessions per week at the <a class="link" href="http://www.proclub.com/"  target="_blank" rel="noopener"
+    >Pro Club</a> trying to get some tone now that the flab has gone away. </p> <p dir=ltr>It’s been a lot of fun to get to this point and I certainly don’t feel like I’m missing anything food wise. Next I’ll write about some of my new favorite recipes.</p> <p dir=ltr>Cheers!</p></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+
+    
+        
+    <div class="disqus-container">
+    
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Jeff Sandquist
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="https://jeffsandquist.com/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
