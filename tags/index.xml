@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jeff Sandquist</title>
-    <link>https://jeffsandquist.com/tags/</link>
+    <link>https://pnw-polaris.github.io/tags/</link>
     <description>Recent content in Tags on Jeff Sandquist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jun 2007 02:18:17 +0000</lastBuildDate><atom:link href="https://jeffsandquist.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jun 2007 02:18:17 +0000</lastBuildDate><atom:link href="https://pnw-polaris.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Featured</title>
-      <link>https://jeffsandquist.com/tags/featured/</link>
+      <link>https://pnw-polaris.github.io/tags/featured/</link>
       <pubDate>Wed, 06 Jun 2007 02:18:17 +0000</pubDate>
       
-      <guid>https://jeffsandquist.com/tags/featured/</guid>
+      <guid>https://pnw-polaris.github.io/tags/featured/</guid>
       <description></description>
     </item>
     
