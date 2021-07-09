@@ -5,6 +5,7 @@ body {
     line-height: 1.4;
     letter-spacing: -0.02em;
     font-family: 'Noto Sans', sans-serif;
+    background-color: #F8FAFC;
 }
 
 * {
@@ -18,7 +19,7 @@ body {
 }
 
 .head {
-    background-color: var(--color-light-bg);
+    background-color: #FFF;
     margin: -1rem;
     width: calc(100% + 2rem);
 }
@@ -70,7 +71,7 @@ body {
 }
 
 .header_image {
-    max-width: 300px;
+    max-height: 75px;
 }
 
 .home__hero {
@@ -169,7 +170,6 @@ a.body_link:active {
         top: 0;
         left: 0;
         padding: 0.5rem 1rem;
-        background: var(--page-bg);
         border-bottom: 1px solid var(--color-light-grey);
         z-index: 1;
     }
@@ -195,7 +195,6 @@ a.body_link:active {
         border-radius: 8px;
         z-index: 10;
         margin-top: 12px;
-/*        box-shadow: 0px 2px 4px 1px;*/
     }
     .nav-wrapper:hover > .nav {
         display: block;
@@ -244,7 +243,6 @@ a.body_link:active {
 
 @media (min-width: 1039px) {
     .head {
-        background-color: var(--color-light-bg);
         margin: -1rem;
         width: calc(100% + 2rem);
     }
