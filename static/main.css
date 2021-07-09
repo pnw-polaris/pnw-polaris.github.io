@@ -24,11 +24,11 @@ body {
     margin-right: auto;
 }
 
-.head__logo {
+.header_logo {
     width: 45%;
 }
 
-.head__nav {
+.main_nav {
     width: 55%;
 }
 
@@ -37,31 +37,27 @@ body {
     align-items: center;
 }
 
-.head__nav .nav {
+.main_nav .nav {
     list-style: none
 }
 
-.head__nav {
+.main_nav {
     text-align: right;
     position: relative;
 }
 
-.head__nav a {
+.main_nav a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
-    color: var(--color-default);
-}
-
-.logo path {
-    fill: var(--color-blue);
+    color: #23395b;
 }
 
 .header_image {
     max-height: 75px;
 }
 
-.home__hero {
+.intro_container {
     width: 100%;
 }
 
@@ -89,17 +85,17 @@ body {
     margin-right: 1rem;
 }
 
-.home__intro {
+.left_bucket {
     float: left;
     display: inline-block;
 }
 
-.home__video, .home__intro {
+.right_bucket, .left_bucket {
     margin: 0;
     width: 46%;
 }
 
-.home__video {
+.right_bucket {
     float: right;
     margin-top: 2rem;
     margin-bottom: 150px;
@@ -168,7 +164,7 @@ a.body_link:active {
     body {
         padding-top: 3.75rem
     }
-    .head__logo, .head__nav { width: 50%; }
+    .header_logo, .main_nav { width: 50%; }
     .logo {
         width: 60px;
     }
@@ -184,7 +180,7 @@ a.body_link:active {
         z-index: 10;
         margin-top: 12px;
     }
-    
+
     .nav-wrapper .nav li a {
         padding: 0.4rem 1rem;
         display: block;
@@ -203,13 +199,13 @@ a.body_link:active {
     }
     .subnav { display: none }
 
-    .home__video{
+    .right_bucket{
         float:none;
         display: inline-block;
         width:90%;
     }
 
-    .home__intro {
+    .left_bucket {
         display: inline-block;
         width:100%;
     }
@@ -236,17 +232,17 @@ a.body_link:active {
     .logo {
         width: 90px;
     }
-    .head__nav {
+    .main_nav {
         flex: 1 1 auto;
     }
-    .head__nav a {
+    .main_nav a {
         margin-left: 1.5rem;
     }
-    .head__nav .nav li {
+    .main_nav .nav li {
         display: inline-block;
         position: relative;
     }
-    .head__nav > .nav-trigger { display: none; }
+    .main_nav > .nav-trigger { display: none; }
     .nav-wrapper .nav > li a {
         padding: 0.5rem 0rem;
         border-bottom: 2px solid transparent;
@@ -254,11 +250,11 @@ a.body_link:active {
     .nav-wrapper .nav > li.nav-current a {
         border-color: #E3E3E3;
     }
-    .head__nav > .nav-wrapper > .nav-trigger {
+    .main_nav > .nav-wrapper > .nav-trigger {
         display: none;
     }
 
-    .home__video{
+    .right_bucket{
         display: inline-block;
     }
 }
