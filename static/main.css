@@ -24,12 +24,12 @@ body {
     margin-right: auto;
 }
 
-.head__logo, .head__nav {
-    width: 50%;
+.head__logo {
+    width: 45%;
 }
 
-.head__logo, .head__nav {
-    width: 50%;
+.head__nav {
+    width: 55%;
 }
 
 .head .container {
