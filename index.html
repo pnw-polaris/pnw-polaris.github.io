@@ -1,246 +1,12 @@
 <html>
-<head>
-<style type="text/css">
-body {
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.4;
-    letter-spacing: -0.02em;
-    color: var(--color-default);
-    font-family: 'Comfortaa', cursive;
-}
-
-* {
-    box-sizing: border-box;
-    border: 0;
-        border-bottom-color: currentcolor;
-        border-bottom-style: none;
-        border-bottom-width: 0px;
-    margin: 0;
-    padding: 0;
-}
-
-.head {
-    background-color: var(--color-light-bg);
-    margin: -1rem;
-    width: calc(100% + 2rem);
-}
-
-.head .container {
-    display: flex;
-    align-items: center;
-    padding: 2rem 1rem 2rem;
-}
-.container {
-    max-width: 1040px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.head__logo, .head__nav {
-    width: 50%;
-}
-
-.head__logo, .head__nav {
-    width: 50%;
-}
-
-/* Header */
-
-.head .container {
-  display: flex;
-  align-items: center;
-  padding: 2rem 1rem 2rem;
-}
-.head__nav .nav {
-  list-style: none
-}
-.head__nav {
-  text-align: right;
-  position: relative;
-}
-
-.head__nav a {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--color-default);
-}
-
-.logo path {
-  fill: var(--color-blue);
-}
-
-@media (max-width: 890px) {
-  /* Mobile nav */
-  .head {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0.5rem 1rem;
-    background: var(--page-bg);
-    border-bottom: 1px solid var(--color-light-grey);
-    z-index: 1;
-  }
-  .head .container {
-    padding: 0;
-    max-width: 100%;
-  }
-  body {
-    padding-top: 3.75rem
-  }
-  .head__logo, .head__nav { width: 50%; }
-  .logo {
-    width: 60px;
-  }
-
-  .nav-trigger { padding: 0.5rem; cursor: pointer; }
-  .nav-wrapper { display: inline-block; }
-  .nav-wrapper .nav {
-    position: absolute;
-    display: none;
-    right: 0;
-    top: 30px;
-    border: 1px solid var(--light-grey);
-    border-radius: var(--box-corner-radius);
-    z-index: 10;
-    box-shadow: 0px 2px 4px var(--box-shadow);
-  }
-  .nav-wrapper:hover > .nav {
-    display: block;
-  }
-  .nav-wrapper .nav li a {
-    padding: 0.4rem 1rem;
-    display: block;
-    border: 0;
-    background-color: var(--page-bg);
-    min-width: 140px;
-  }
-  .nav-wrapper .nav li:first-of-type a {
-    border-radius: var(--box-corner-radius) var(--box-corner-radius) 0 0;
-  }
-  .nav-wrapper .nav li:last-of-type a {
-    border-radius: 0 0 var(--box-corner-radius) var(--box-corner-radius);
-  }
-  .nav-wrapper .nav li a:hover {
-    background-color: var(--color-light-bg)
-  }
-
-  .subnav { display: none }
-}
-@media (min-width: 891px) {
-  /* Larger screen nav */
-  .head {
-    background-color: var(--color-light-bg);
-    margin: -1rem;
-    width: calc(100% + 2rem);
-  }
-  .logo {
-    width: 90px;
-  }
-  .head__nav {
-    flex: 1 1 auto;
-  }
-  .head__nav a {
-    margin-left: 1.5rem;
-  }
-  .head__nav .nav li {
-    display: inline-block;
-    position: relative;
-  }
-  .head__nav > .nav-trigger { display: none; }
-
-  .nav-wrapper .nav > li a {
-    padding: 0.5rem 0rem;
-    border-bottom: 2px solid transparent;
-  }
-
-  .nav-wrapper .nav > li.nav-current a {
-    border-color: var(--color-blue);
-    color: var(--color-blue);
-  }
-
-  /* Hide man mobile nav */
-  .head__nav > .nav-wrapper > .nav-trigger {
-    display: none;
-  }
-
-
-  .subnav .nav-trigger { padding: 0.5rem; margin-right: -0.5rem; cursor: pointer; font-size: 12px }
-  .subnav.nav-wrapper { display: inline-block; }
-  .subnav.nav-wrapper .nav {
-    position: absolute;
-    display: none;
-    left: 0.5rem;
-    top: 28px;
-    border: 1px solid var(--light-grey);
-    border-radius: var(--box-corner-radius);
-    z-index: 10;
-    box-shadow: 0px 2px 4px var(--box-shadow);
-  }
-  .subnav.nav-wrapper:hover > .nav {
-    display: block;
-  }
-  .subnav.nav-wrapper .nav li {
-    display: list-item;
-  }
-  .subnav.nav-wrapper .nav li a {
-    padding: 0.4rem 1rem;
-    margin-left: 0;
-    display: block;
-    border: 0;
-    background-color: var(--page-bg);
-    min-width: 200px;
-    text-align: left;
-  }
-  .subnav.nav-wrapper .nav li:first-of-type a {
-    border-radius: var(--box-corner-radius) var(--box-corner-radius) 0 0;
-  }
-  .subnav.nav-wrapper .nav li:last-of-type a {
-    border-radius: 0 0 var(--box-corner-radius) var(--box-corner-radius);
-  }
-  .subnav.nav-wrapper .nav li a:hover {
-    background-color: var(--color-light-bg)
-  }
-
-  .header_image {
-    max-width: 300px;
-  }
-
-  .home__hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.mt3 {
-    margin-top: 3rem;
-}
-.mb2 {
-    margin-bottom: 2rem;
-}
-
-.home__video, .home__intro {
-    margin: 0;
-    width: 46%;
-}
-
-.home__video {
-    margin-top: 2rem;
-}
-.home__video {
-    margin-bottom: 150px;
-}
-
-</style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <head>
+    <link rel="stylesheet" type="text/css" href="static/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+  </head>
   <body>
-    <div class="head"> 
+    <div class="head">
       <nav class="container">
         <div class="head__logo">
           <a aria-label="logo" class="nolink" href="https://aliabdaal.com">
@@ -250,37 +16,33 @@ body {
         <div class="head__nav fssmall">
           <div class="nav-wrapper">
             <span class="nav-trigger">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><g fill="var(--color-default)"><path d="M8 14h7a1 1 0 000-2H8a1 1 0 000 2zM1 4h14a1 1 0 000-2H1a1 1 0 000 2zM1 9h14a1 1 0 000-2H1a1 1 0 000 2z"></path></g></svg>
-            </span>
-            <ul class="nav">
-              <li class="nav-about"><a href="https://twitter.com/jeffsand">Twitter</a></li>
-              <li class="nav-articles"><a href="https://www.linkedin.com/in/jeffsandquist/">LinkedIn</a></li>
-              <li class="nav-courses"><a href="https://developer.microsoft.com/advocates/jeff-sandquist">Microsoft Developer Profile</a></li>
-            </ul>
-          </div>
+            <svg viewBox="0 0 100 80" width="40" height="40">
+              <rect width="100" height="12"></rect>
+              <rect y="30" width="100" height="12"></rect>
+              <rect y="60" width="100" height="12"></rect>
+            </svg>
+          </span>
+          <ul class="nav">
+            <li class="nav-about"><a href="https://twitter.com/jeffsand">Twitter</a></li>
+            <li class="nav-articles"><a href="https://www.linkedin.com/in/jeffsandquist/">LinkedIn</a></li>
+            <li class="nav-courses"><a href="https://developer.microsoft.com/advocates/jeff-sandquist">Microsoft Developer Profile</a></li>
+          </ul>
         </div>
-      </nav>
-    </div>
-
-    <div class="container">
-    <div class="home__hero mt3 mb2">
-
-    <div class="home__intro mt2">
-      <b>test</b>
-
-    </div>
-
-    <div class="home__video">
-
-     <h1 class="fs45">Hello there 👋</h1>
-      <h2 class="fs32 normal mb1">I'm Jeff Sandquist. I am a Corporate Vice President at Microsoft.</h2>
-      <h3 class="fs20 normal">My team is on a mission to help developers build great things in the cloud. We build Azure.com, developer.microsoft.com, Microsoft Learn, Learn TV, and docs.microsoft.com.</h3>
-      
-      <h3 class="fs20 normal mt1">I've previously spent more than 16 years at Microsoft, before joining Twitter to drive their Developer & Enterprise team in 2013. I came back to Microsoft in 2015.</h3> 
-
-    </div>
-
+      </div>
+    </nav>
   </div>
-</div>
-  </body>
+  <div class="container">
+    <div class="home__hero mt3 mb2 ml1 mr1">
+      <div class="home__intro mt2">
+        <img src="media/jeffsand.png" />
+      </div>
+      <div class="home__video">
+        <h1>Hello there 👋</h1>
+        <h2 class="mb1 mt1">I'm Jeff Sandquist. I am a Corporate Vice President at Microsoft.</h2>
+        <h3>My team is on a mission to help developers build great things in the cloud. We build Azure.com, developer.microsoft.com, Microsoft Learn, Learn TV, and docs.microsoft.com.</h3>
+        <h3 class="mt1">I've previously spent more than 16 years at Microsoft, before joining Twitter to drive their Developer & Enterprise team in 2013. I came back to Microsoft in 2015.</h3>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
