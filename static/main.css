@@ -75,9 +75,6 @@ body {
 
 .home__hero {
     width: 100%;
-/*    display: flex;
-    justify-content: space-between;
-    align-items: center;*/
 }
 
 .mt3 {
@@ -127,6 +124,10 @@ h1 {
 
 h2, h3 {
     font-weight: 400;
+}
+
+.body_link{
+    font-weight: 700;
 }
 
 a.body_link:link {
@@ -190,10 +191,11 @@ a.body_link:active {
         display: none;
         right: 0;
         top: 30px;
-        border: 1px solid var(--light-grey);
-        border-radius: var(--box-corner-radius);
+        border: 1px solid #353B3C;
+        border-radius: 8px;
         z-index: 10;
-        box-shadow: 0px 2px 4px var(--box-shadow);
+        margin-top: 12px;
+/*        box-shadow: 0px 2px 4px 1px;*/
     }
     .nav-wrapper:hover > .nav {
         display: block;
@@ -202,17 +204,17 @@ a.body_link:active {
         padding: 0.4rem 1rem;
         display: block;
         border: 0;
-        background-color: #111;
+        background-color: #E3E3E3;
         min-width: 140px;
     }
     .nav-wrapper .nav li:first-of-type a {
-        border-radius: var(--box-corner-radius) var(--box-corner-radius) 0 0;
+        border-radius: 8px 8px 0 0;
     }
     .nav-wrapper .nav li:last-of-type a {
-        border-radius: 0 0 var(--box-corner-radius) var(--box-corner-radius);
+        border-radius: 0 0 8px 8px;
     }
     .nav-wrapper .nav li a:hover {
-        background-color: var(--color-light-bg)
+        background-color: #fff
     }
     .subnav { display: none }
 
