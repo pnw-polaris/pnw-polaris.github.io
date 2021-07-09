@@ -184,7 +184,7 @@ a.body_link:active {
         z-index: 10;
         margin-top: 12px;
     }
-    .nav-wrapper:hover > .nav {
+    .nav-wrapper:hover > .nav, .nav-wrapper:active > .nav {
         display: block;
     }
     .nav-wrapper .nav li a {
